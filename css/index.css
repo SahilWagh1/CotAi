@@ -1,0 +1,34 @@
+.loader_bg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+body.loaded .loader_bg {
+    display: none;
+  }
+.text-bg h1 {
+    color: #000;
+    padding-top: 50px;
+    font-size: 75px;
+    line-height: 94px;
+    font-weight: bold;
+    padding-left: 56px;
+}
+.text-bg span{
+    padding-bottom: 25px;
+    padding-left: 56px;
+}
+.brand{
+    width: 80px;
+}
+.best{
+   position: relative;
+   float: right;
+   width: 1000px;
+   margin-left: 600px;
+}
+.footer{
+    background: url("../images/banner2.png");
+    background-size: 100%;
+}

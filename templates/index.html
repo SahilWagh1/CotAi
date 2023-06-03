@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>CotAI</title>
+      <link rel = "icon" href = "../static/images/logo.png" type = "image/x-icon">
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="css/index.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="..//static/images/loading.gif" class="loader-img" alt="#"/></div>
+      </div>
+      <!-- end loader -->
+      <!-- header -->
+      <header>
+         <!-- header inner -->
+         <div class="header-top">
+            <div class="header">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                           <div class="center-desk">
+                              <div class="logo">
+                                 <a href="index.html"><img src="../static/images/logo.png" class="brand" alt="#" /></a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                     <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                           <div class="limit-box">
+                              <nav class="main-menu">
+                                 <ul class="menu-area-main">
+                                    <li class="active"> <a href="index.html">Home</a> </li>
+                                    <li> <a href="#Predict">Predict</a> </li>
+                                    <li> <a href="#About">About</a> </li>
+                                 </ul>
+                              </nav>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end header inner -->
+            <!-- end header -->
+            <section class="slider_section">
+               <div class="banner_main">
+                  <div class="container">
+                     <div class="row d_flex">
+                        <div class="col-xl-5 col-lg-5 col-md-5 col-sm-12 ">
+                           <div class="text-bg">
+                              <h1>CotAi</h1>
+                              <span>A Cotton Crop Disease Detector.<br> 
+                              <strong class="land_bold">कापूस रोग शोधक.</strong></span>
+                              <a href="#">Contact Us</a>
+                           </div>
+                        </div>
+                        <div class="col-xl-7 col-lg-7 col-md-7 col-sm-12">
+                           <div class="text-img">
+                              <figure><img src="..//static/images/fig.png" /></figure>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+         </section>
+         </div>
+      </header>
+      <div class="container-fluid details ">
+         <h1 class="text-center mt-5 ">Predict Cotton Crop Disease & Get Cure.</h1>
+         <h2 class="text-center mt-4 mb-4" style="font-size: 2rem;"><marque>कापसाच्या झाडाचा फोटो टाका.</marque></h2>
+         <form action="/predict" class="form-control-file text-center method="post" enctype="multipart/form-data" onsubmit="showloading()">
+
+             <input type="file" name="image" class="upload">
+             <input type="submit" value="Predict">
+
+         </form>
+      </div>
+  <div id="Aboutus" class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top 5">
+         <div class="container">
+            <div class="row">
+               <div class="col-md-12">
+                  <div class="titlepage">
+                     <h2>About us</h2>
+                     <p> Cotton is one of the most important fiber and cash crop of India and plays a
+                        dominant role in the industrial and agricultural economy of the country. It provides the
+                        basic raw material (cotton fibre) to cotton textile industry. Cotton in India provides direct
+                        livelihood to 6 million farmers and about 40 -50 million people are employed in cotton
+                        trade and its processing.</p>
+
+                        <p>Without proper identification of the disease and the disease-causing agent, disease control measures can be a waste of time and money and can lead to further plant losses. Proper disease diagnosis is therefore vital. Often, plant pathologists have to rely on symptoms for the identification of a disease problem.</p><br>
+                        <p>कापूस हे भारतातील सर्वात महत्वाचे फायबर आणि नगदी पीक आहे आणि देशाच्या औद्योगिक आणि कृषी अर्थव्यवस्थेत प्रमुख भूमिका बजावते. हे कापूस वस्त्रोद्योगाला मूलभूत कच्चा माल (कापूस फायबर) प्रदान करते. भारतातील कापूस 6 दशलक्ष शेतकऱ्यांना थेट उपजीविका प्रदान करतो आणि सुमारे 40-50 दशलक्ष लोकांना कापूस व्यापार आणि त्याच्या प्रक्रियेत रोजगार मिळतो.
+
+                           रोग आणि रोगकारक एजंटची योग्य ओळख न करता, रोग नियंत्रण उपाय वेळेचा आणि पैशाचा अपव्यय ठरू शकतात आणि त्यामुळे झाडांचे आणखी नुकसान होऊ शकते. त्यामुळे रोगाचे योग्य निदान होणे गरजेचे आहे. बर्याचदा, वनस्पती रोगशास्त्रज्ञांना रोगाच्या समस्येच्या ओळखीसाठी लक्षणांवर अवलंबून राहावे लागते.</p>
+                     </div>
+               </div>
+            </div>
+         </div>
+      </div>
+            <div class="container">
+   <footer id="footer "class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-5">
+                 <p  class="col-md-4 mb-0 text-muted">© 2023 all rights reserved.<br>designed by sahil</p>
+                 <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                   <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                 </a>
+                 <ul class="nav col-md-4 justify-content-end">
+                   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                   <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                 </ul>
+               </footer>
+      <!-- end footer -->
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <script src="js/plugin.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+    
+   </body>
+</html>
