@@ -22,7 +22,7 @@ HTML5, CSS3
 
 1. Clone this repository to your local machine:
 
-> git clone https://github.com/your-username/cotton-crop-disease-detector.git
+> git clone https://github.com/SahilWagh1/cotton-crop-disease-detector.git
 
 2. Navigate to the project directory:
 
