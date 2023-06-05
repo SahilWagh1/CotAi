@@ -28,7 +28,14 @@ body.loaded .loader_bg {
    width: 1000px;
    margin-left: 600px;
 }
-.footer{
-    background: url("../images/banner2.png");
-    background-size: 100%;
-}
+.footer {
+    background-image: url('../images/banner2.png');
+    background-size: cover;
+    background-position: center;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .footer a {
+    color: #000;
+  }
