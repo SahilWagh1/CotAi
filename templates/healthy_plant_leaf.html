@@ -2,83 +2,133 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.1/css/bootstrap.min.css"
-        integrity="sha384-VCmXjywReHh4PwowAiWNagnWcLhlEJLA5buUprzK8rxFgeH0kww/aWY76TfkUoSX" crossorigin="anonymous">
-
-    <title>COTTON PLANT DISEASE PREDICTION</title>
-
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>CotAI</title>
+    <link rel = "icon" href = "../static/images/logo.png" type = "image/x-icon">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="../static/css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="../static/css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="../static/css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="../static/css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+    <link rel="stylesheet" href="..//static/css/index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
     <style>
-        * {
-            margin: 0px;
-            padding: 0px;
-            box-sizing: border-box;
+        .img-container {
+            display: flex;
+            align-items: flex-end;
         }
 
-        .border img {
-            border-radius: 15px;
-            border: 2px solid black;
+        .image-container {
+            width: 200px; /* Adjust the width as per your requirements */
+            height: 200px; /* Adjust the height as per your requirements */
+            margin-right: 20px; /* Adjust the margin as per your requirements */
+        }
+
+        .image-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .info {
+            flex: 1;
+        }
+        .navbar-with-image {
+          background-image: url('../static/images/banner2.png');
+          background-size: cover;
+        }
+        .d-inline-block{
+            width: 70px;
+            height: 70px;
         }
     </style>
 </head>
 
 <body>
-
-
-
-    <div>
-        <img src="/static/images/cotton plant banner1.png" class="w3-border w3-padding" alt=""
-            style="width:100%">
-    </div>
-
-
-
-
+    <div class="loader_bg">
+        <div class="loader"><img src="..//static/images/loading.gif" class="loader-img" alt="#"/></div>
+     </div>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-with-image">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">
+                <img src="..//static/images/logo.png" alt="Logo" width="30" height="30" class="d-inline-block align-text-top">
+              </a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="menu-area">
+                <div class="limit-box">
+                   <nav class="main-menu">
+                      <ul class="menu-area-main">
+                         <li> <a href="index.html">Home</a> </li>
+                         <li> <a href="#About">About</a> </li>
+                      </ul>
+                   </nav>
+                </div>
+             </div>
+            </div>
+          </nav>
     <div class="container my-2">
         <div class="row mb-5">
 
-            <div class="col-sm" style="margin-bottom: 23px;">
-                <span class="border border-primary">
-                    <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
-                    
-
-                </span>
-            </div>
-
-            <div class="col-sm">
-
-                <div>
-                    <h1 style="padding: 15px; background-color: rgb(153, 156, 150); color: white;"
-                        class="text-center mb-5 content-h1 rounded">
-                        {{pred_output}} </h1>
+            <div class="img-container">
+                <div class="image-container" style="margin-bottom: 23px; margin-top: 23px;">
+                    <span class="border border-primary ">
+                        <img src="{{ user_image }}" alt="User Image" class="img-thumbnail">
+                    </span>
                 </div>
-                <div class="details">
-
-                    <h6>
-
-
-                        <b>There is no disease on the cotton plant.</b></br>
-                        Although the chemical fertilizer has fallen on the leaves of the tree, the leaves are burnt, but
-                        there is no need to worry.</br></br>
-                        <b>कपास के पेड़ पर कोई बीमारी नहीं है। </b></br>
-                        रासायनिक उर्वरक पेड़ की पत्तियों पर गिर गया है, पत्तियां जल गई हैं, लेकिन चिंता करने की कोई
-                        जरूरत नहीं है।</br></br>
-                        <b>कपाशीच्या झाडावर कोणताही रोग नाही आहे. </b></br>
-                        रासायनिक खत झाडाच्या पानावर पडल्यामुळे पान जळल आहे, तरी काही चिंता करायची गरज नाही. <b>मजूरांना
-                            कंबर बागवून खत टाकायला सांगा. </b></br></br>
-                        <b>કપાસના ઝાડ ઉપર કોઈ રોગ નથી.</b></br></br>
-                        <b>ಹತ್ತಿ ಮರದ ಮೇಲೆ ಯಾವುದೇ ರೋಗವಿಲ್ಲ..</b></br></br>
-                        <b>పత్తి చెట్టుపై వ్యాధి లేదు..</b></br></br>
-
-                    </h6>
+                <div class="info">
+                    <h2>{{pred_output}}</h2>
+                    <h5>
+                        There is no disease on the cotton Plant.</br></br>
+                        कपास के पेड़ पर कोई बीमारी नहीं है। </br></br>
+                        कपाशीच्या झाडावर कोणताही रोग नाही आहे. </br></br>
+                        કપાસના ઝાડ ઉપર કોઈ રોગ નથી.</br></br>
+                        ಹತ್ತಿ ಮರದ ಮೇಲೆ ಯಾವುದೇ ರೋಗವಿಲ್ಲ..</br></br>
+                        పత్తి చెట్టుపై వ్యాధి లేదు..</br></br>
+                    </h5>
                 </div>
             </div>
-        </div>
-
-
-    </div>
+            <div class="container">
+                <footer id="footer "class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top border-5">
+                              <p  class="col-md-4 mb-0 text-muted">© 2023 all rights reserved.<br>designed by sahil</p>
+                              <a href="/" class="col-md-4 d-flex align-items-center justify-content-center mb-3 mb-md-0 me-md-auto link-dark text-decoration-none">
+                                <svg class="bi me-2" width="40" height="32"><use xlink:href="#bootstrap"></use></svg>
+                              </a>
+                              <ul class="nav col-md-4 justify-content-end">
+                                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">Home</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
+                                <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
+                              </ul>
+                            </footer>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.0.0-alpha1/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>  
+    <script src="../static/js/jquery.min.js"></script>
+    <script src="../static/js/popper.min.js"></script>
+    <script src="../static/js/bootstrap.bundle.min.js"></script>
+    <script src="../static/js/jquery-3.0.0.min.js"></script>
+    <script src="../static/js/plugin.js"></script>
+  <!-- sidebar -->
+    <script src="../static/js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="../static/js/custom.js"></script>
+    <script src="https:cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
 </body>
-
 </html>

@@ -20,7 +20,7 @@ def pred_cot_dieas(cott_plant):
   test_image = load_img(cott_plant, target_size = (150, 150)) # load image 
   print("@@ Got Image for prediction")
   
-  test_image = img_to_array(test_image)/255 # convert image to np array and normalize
+  test_image = img_to_array(test_image)/255 # convert image to np array anormalize
   test_image = np.expand_dims(test_image, axis = 0) # change dimention 3D to 4D
   
   result = model.predict(test_image).round(3) # predict diseased palnt or not
