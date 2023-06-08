@@ -1,6 +1,6 @@
-# Cotton Crop Disease Detector
+# CotAi
 
-The Cotton Crop Disease Detector is a web application that uses machine learning techniques to identify and classify diseases in cotton crops. The application is built using TensorFlow, Flask, HTML, CSS, and Bootstrap.
+The CotAi is a web application that uses machine learning techniques to identify and classify diseases in cotton crops. The application is built using TensorFlow, Flask, HTML, CSS, and Bootstrap.
 
 ### Features 
 
@@ -10,7 +10,7 @@ The Cotton Crop Disease Detector is a web application that uses machine learning
 
 ### Requirements
 
-To run the Cotton Crop Disease Detector, you need to have the following software installed:
+To run the CotAi, you need to have the following software installed:
 
 * Python (version 3.6 or higher)
 * TensorFlow (version 2.0 or higher)
@@ -22,11 +22,11 @@ HTML5, CSS3
 
 1. Clone this repository to your local machine:
 
- ``` git clone https://github.com/SahilWagh1/cotton-crop-disease-detector.git ```
+ ``` git clone https://github.com/SahilWagh1/cotAi.git ```
 
 2. Navigate to the project directory:
 
-``` cd cotton-crop-disease-detector ```
+``` cd cotAi```
 
 3.Install the required Python packages using pip:
 
@@ -36,7 +36,7 @@ HTML5, CSS3
 
 ``` flask run ``` 
 
-5.Open your web browser and navigate to __http://localhost:5000__ to access the Cotton Crop Disease Detector.
+5.Open your web browser and navigate to __http://localhost:5000__ to access the Cotton CotAi.
 
 ### Usage
 
