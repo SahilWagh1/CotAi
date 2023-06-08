@@ -28,8 +28,6 @@ HTML5, CSS3
 
 ``` cd cotton-crop-disease-detector ```
 
-Install the required Python packages using pip:
-
 3.Install the required Python packages using pip:
 
 ``` pip install -r requirements.txt ```
