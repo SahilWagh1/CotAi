@@ -22,19 +22,21 @@ HTML5, CSS3
 
 1. Clone this repository to your local machine:
 
-> git clone https://github.com/SahilWagh1/cotton-crop-disease-detector.git
+ ``` git clone https://github.com/SahilWagh1/cotton-crop-disease-detector.git ```
 
 2. Navigate to the project directory:
 
-> cd cotton-crop-disease-detector
+``` cd cotton-crop-disease-detector ```
+
 Install the required Python packages using pip:
 
 3.Install the required Python packages using pip:
->pip install -r requirements.txt
+
+``` pip install -r requirements.txt ```
 
 4. Start the Flask development server:
 
-> flask run
+``` flask run ``` 
 
 5.Open your web browser and navigate to __http://localhost:5000__ to access the Cotton Crop Disease Detector.
 
