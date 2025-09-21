@@ -75,4 +75,4 @@ The machine learning model used in the Cotton Crop Disease Detector is trained u
 * Flask is used for building the web application.
 * HTML, CSS, and Bootstrap are used for designing the web interface.
 ### License
-The Cotton Crop Disease Detector is open-source software licensed under the __MIT License__. Feel free to modify and distribute it as per the terms of the license.
+The Cotton Crop Disease Detector is open-source software licensed under the __MIT License__. Feel free to modify and distribute it as per the terms of the license..
